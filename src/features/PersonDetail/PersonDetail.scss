@@ -1,0 +1,47 @@
+@import "../../assets/scss/variables";
+
+.personDetail {
+  .-detailbox {
+    display: flex;
+
+    @media #{$mobile} {
+      align-items: center;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .-imgcontainer {
+      margin-right: 30px;
+      max-width: 180px;
+      > img {
+        width: 100%;
+      }
+    }
+
+    .-detail {
+      @media #{$mobile} {
+        width: 100%;
+      }
+    }
+
+    .-name {
+      border-bottom: 2px solid $c-primary;
+      color: white;
+      font-size: 40px;
+      margin-bottom: 20px;
+
+      @media #{$mobile} {
+        border-bottom: none;
+        font-size: 25px;
+        margin-top: 20px;
+        width: 100%;
+      }
+    }
+
+    .-starshiptitle {
+      color: $c-primary;
+      font-size: 20px;
+      margin: 10px 0 20px;
+    }
+  }
+}

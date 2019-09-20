@@ -1,0 +1,52 @@
+@import "../../assets/scss/variables";
+
+.personBox {
+  flex-basis: 280px;
+  background: black;
+  &:hover {
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+    transform: scale(1.1);
+    .-imgwrapper {
+      > img {
+        opacity: 1;
+      }
+    }
+  }
+  .-boxwrapper {
+    background: black;
+    border: none;
+    cursor: pointer;
+    height: 100%;
+    padding: 0;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+  }
+  .-imgwrapper {
+    background: black;
+    height: 200px;
+    overflow: hidden;
+    text-align: center;
+    position: relative;
+    > img {
+      left: 0;
+      opacity: 0.7;
+      position: absolute;
+      transition: all ease-in-out 0.5s;
+      width: 100%;
+      @media #{$mobile} {
+        opacity: 1;
+      }
+    }
+  }
+  .-persondetailbox {
+    background: rgba($c-primary, 0.7);
+    bottom: 20px;
+    border-radius: 0 5px 5px 0;
+    font-size: 15px;
+    padding: 12px;
+    position: absolute;
+    text-align: left;
+    width: 90%;
+  }
+}

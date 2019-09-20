@@ -1,0 +1,16 @@
+@import "../../assets/scss/variables";
+
+.starship {
+  background: $c-primary;
+  margin-bottom: 15px;
+  padding: 10px;
+
+  .-nameship {
+    font-weight: 600;
+  }
+
+  .-detailship {
+    font-size: 10px;
+    padding-top: 10px;
+  }
+}

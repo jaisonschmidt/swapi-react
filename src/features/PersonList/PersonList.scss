@@ -1,0 +1,56 @@
+@import "../../assets/scss/variables";
+
+.personList {
+  border-top: 5px solid $c-primary;
+  -webkit-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.75);
+  bottom: 0;
+  position: fixed;
+  width: 100%;
+  .-buttonpagination {
+    background: $c-primary;
+    border: transparent;
+    color: black;
+    padding: 15px 20px;
+    position: absolute;
+    right: 0;
+    top: -45px;
+    z-index: 10;
+
+    @media #{$mobile} {
+      left: 0;
+      margin-left: auto;
+      margin-right: auto;
+      right: 0;
+    }
+  }
+  .swiper-wrapper {
+    flex-basis: 280px;
+  }
+  .swiper-scrollbar-drag {
+    background: $c-primary;
+  }
+}
+
+.modalDetail {
+  background: rgba(black, 0.9);
+  border-bottom: 5px solid $c-primary;
+  border-top: 5px solid $c-primary;
+  max-height: 100%;
+  max-width: 700px;
+  outline: none;
+  padding: 20px;
+  position: relative;
+  overflow: auto;
+
+  .-btnclosemodal {
+    background: $c-primary;
+    border: none;
+    font-size: 25px;
+    padding: 10px 15px;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+}
